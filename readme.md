@@ -54,6 +54,8 @@ Each service:
 ### 🔑 Auth Service (`/auth`)
 Handles authentication and user identity.
 
+(Created Migration and seed data for users model-- explain this)
+
 **Endpoints**
 - `POST /auth/signup`
 - `POST /auth/login`

@@ -28,7 +28,7 @@ export async function profile(req: Request, res: Response, next: NextFunction) {
     const user = await User.findOne({
       where: { id: decode.userId, status: UserStatus.ACTIVE },
       raw: true,
-      attributes: ["name", "email", "status"],
+      attributes: ["name", "email", "status", "role"],
     });
     if (!user) {
       return failedResponseHandler(res, 404, "User not found");
